@@ -15,5 +15,20 @@ public String getDescription() {
 public void setDescription(String description) {
 	this.description = description;
 }
+public Income(String titre, String date, float montant, String source, String description) {
+	super(titre, date, montant);
+	this.source = source;
+	this.description = description;
+}
+public double getTaxe()
+{
+	if(this.getMontant()<1000)
+	{
+		return this.getMontant()*0.15;
+		
+	}
+	else
+		return this.getMontant()*0.2;
 
+}
 }
