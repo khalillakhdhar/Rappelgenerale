@@ -20,5 +20,10 @@ public Outcome(String titre, String date, float montant, String type, String rai
 	this.type = type;
 	this.raison = raison;
 }
+@Override
+public String toString() {
+	return "Outcome [type=" + type + ", raison=" + raison + ", toString()=" + super.toString() + "]";
+}
+
 
 }
